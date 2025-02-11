@@ -1,0 +1,97 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P1 Blue"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "DumpComand"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P2 Blue"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P3 Blue"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "DumpComand"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P4 Blue"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P5 Blue"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "DumpComand"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P6 Blue"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 1.0
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "P7 Blue"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "DumpComand"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}
