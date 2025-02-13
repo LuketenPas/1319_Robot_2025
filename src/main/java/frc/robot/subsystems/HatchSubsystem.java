@@ -4,6 +4,7 @@
 
 package frc.robot.subsystems;
 
+import edu.wpi.first.wpilibj.Compressor;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.PneumaticsModuleType;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
@@ -13,11 +14,15 @@ public class HatchSubsystem extends SubsystemBase {
   /** Creates a new HatchSubsystem. */
 
   private final DoubleSolenoid hatchSolenoid; 
+  private final Compressor compressor;
   
 
   public HatchSubsystem() {
-    hatchSolenoid = new DoubleSolenoid(PneumaticsModuleType.REVPH, 0 , 1);
+    hatchSolenoid = new DoubleSolenoid(PneumaticsModuleType.REVPH, 0, 1);
+    compressor = new Compressor(PneumaticsModuleType.REVPH);
     hatchSolenoid.set(Value.kForward);
+    
+    compressor.enableAnalog(100, 120);
   }
 
   @Override
